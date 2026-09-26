@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Download, Volume2, VolumeX, Shield, ChevronRight } from 'lucide-react';
 import { soundFx } from '../utils/sound';
+import { downloadCV } from '../utils/downloadCV';
 
 interface NavbarProps {
   onOpenCV: () => void;
@@ -117,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCV }) => {
           {/* Download CV CTA */}
           <button
             onClick={() => {
-              soundFx.playClick();
+              downloadCV();
               onOpenCV();
             }}
             onMouseEnter={() => soundFx.playHover()}
@@ -177,6 +178,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCV }) => {
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
+                    downloadCV();
                     onOpenCV();
                   }}
                   className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-sm shadow-[0_0_20px_rgba(22,135,255,0.4)]"

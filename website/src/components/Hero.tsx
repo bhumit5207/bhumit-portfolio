@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Mail, Download, ShieldCheck } from 'lucide-react';
 import { Hero3DVisual } from './Hero3DVisual';
 import { soundFx } from '../utils/sound';
+import { downloadCV } from '../utils/downloadCV';
 
 interface HeroProps {
   onOpenCV: () => void;
@@ -128,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCV }) => {
               {/* Secondary Download CV */}
               <button
                 onClick={() => {
-                  soundFx.playClick();
+                  downloadCV();
                   onOpenCV();
                 }}
                 onMouseEnter={() => soundFx.playHover()}

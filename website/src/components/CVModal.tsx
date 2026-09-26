@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, Printer, Mail, Phone, MapPin } from 'lucide-react';
 import { soundFx } from '../utils/sound';
+import { downloadCV } from '../utils/downloadCV';
 
 interface CVModalProps {
   isOpen: boolean;
@@ -35,11 +36,18 @@ export const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
             </div>
             <div className="flex items-center gap-3">
               <button
-                onClick={handlePrint}
+                onClick={downloadCV}
                 className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/30 text-xs font-semibold transition"
               >
+                <Download className="w-3.5 h-3.5" />
+                Download PDF
+              </button>
+              <button
+                onClick={handlePrint}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-semibold transition"
+              >
                 <Printer className="w-3.5 h-3.5" />
-                Print / Save PDF
+                Print
               </button>
               <button
                 onClick={() => {
@@ -190,7 +198,7 @@ export const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
           <div className="px-6 py-4 border-t border-cyan-500/20 bg-[#061329] flex justify-between items-center">
             <span className="text-xs font-mono text-slate-400">Bhumit Kotadiya • SQA Engineer</span>
             <button
-              onClick={handlePrint}
+              onClick={downloadCV}
               className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-xs transition shadow-[0_0_15px_rgba(54,217,255,0.4)]"
             >
               <Download className="w-4 h-4" /> Download PDF

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { LinkedInIcon, GitHubIcon } from './SocialIcons';
 import { soundFx } from '../utils/sound';
+import { downloadCV } from '../utils/downloadCV';
 
 interface ContactProps {
   onOpenCV: () => void;
@@ -169,7 +170,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenCV }) => {
 
                 <button
                   onClick={() => {
-                    soundFx.playClick();
+                    downloadCV();
                     onOpenCV();
                   }}
                   onMouseEnter={() => soundFx.playHover()}
