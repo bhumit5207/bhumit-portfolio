@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Testing Directory & Configs (Excluded from GitHub commit/push)
+testing/
+tests/
+playwright-report/
+test-results/
+playwright.config.ts
+vitest.config.ts
