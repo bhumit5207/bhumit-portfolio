@@ -145,7 +145,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenCV }) => {
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/bhumit-kotadiya-96617724b"
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => soundFx.playClick()}
@@ -157,7 +157,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenCV }) => {
                 </a>
 
                 <a
-                  href="https://github.com"
+                  href="https://github.com/bhumit5207"
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => soundFx.playClick()}

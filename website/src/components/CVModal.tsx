@@ -89,6 +89,15 @@ export const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
                     <MapPin className="w-3.5 h-3.5 text-cyan-400" />
                     <span>Ahmedabad, India</span>
                   </div>
+                  <div className="flex items-center gap-2 pt-0.5">
+                    <a href="https://www.linkedin.com/in/bhumit-kotadiya-96617724b" target="_blank" rel="noreferrer" className="text-[11px] text-cyan-300 hover:underline">
+                      LinkedIn: Bhumit Kotadiya
+                    </a>
+                    <span>•</span>
+                    <a href="https://github.com/bhumit5207" target="_blank" rel="noreferrer" className="text-[11px] text-cyan-300 hover:underline">
+                      GitHub: Bhumit5207
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

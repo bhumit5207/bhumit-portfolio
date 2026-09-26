@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
           {/* Social Icons & Back to Top */}
           <div className="flex items-center gap-3">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/bhumit-kotadiya-96617724b"
               target="_blank"
               rel="noreferrer"
               onClick={() => soundFx.playClick()}
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/bhumit5207"
               target="_blank"
               rel="noreferrer"
               onClick={() => soundFx.playClick()}
