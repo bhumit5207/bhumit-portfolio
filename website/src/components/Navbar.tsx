@@ -53,10 +53,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCV }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#061329]/90 backdrop-blur-md border-b border-cyan-500/20 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.5)]'
-          : 'bg-transparent py-5'
+          ? 'bg-[#061329]/95 backdrop-blur-md border-b border-cyan-500/20 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.5)]'
+          : 'bg-[#061329]/90 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none py-3 sm:py-5 border-b sm:border-b-0 border-cyan-500/20 sm:border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
